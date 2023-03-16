@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offering</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <selection class="banner">
+        <header>
+
+            <ul>
+                <li><a class="l" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="logo">
+                <span>A</span>bhyaz </a>
+            <p>from <span class="m">MTAB</span> Technology Center</p>
+        </header>
+        <div class="content">
+            <br>
+            <h2>We are currently hiring in: <span id="text"></h2>
+            <br>
+            <h4>Abhyaz is a leading company in the field of technology, and we're always on the lookout for talented and motivated individuals to join our team:</h4>
+            <br>
+<h5>If you're interested in applying for one of these positions, please use the form below to submit your resume and cover letter. We look forward to hearing from you!</h5>
+
+</div>
+        <img src="colors.png" class="colors">
+        <!-- <img src="Online Internship - Abhyaz Blog.jpg" class="men"> -->
+        <div class="form">
+            <h2>Application form</h2>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Full Name">
+                <label for="floatingInput">Full Name</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload CV</label>
+            </div>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <ul class="sci">
+            <li><a href=#><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=#><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href=#><ion-icon name="logo-skype"></ion-icon></a></li>
+            <li><a href=#><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </selection>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script>
+        let typingText = new Typed("#text", {
+            strings: ["Software Developer", "Marketing Manager", "UX Designer", "Data Scientist","Project Manager"],
+            loop: true,
+            typeSpeed: 100,
+            backspeed: 50,
+            backdelay: 1000
+        })
+        let banner = document.querySelector('.banner');
+        let dayNight = document.querySelector('.dayNight');
+        dayNight.onclick = function () {
+            banner.classList.toggle('night')
+        }
+    </script>
+</body>
+
+</html>
